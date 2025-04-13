@@ -12,10 +12,11 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Vinícius LINHARES
+- Matricula: 1419301
+- Proposta de projeto escolhida: Site de notícias
+- Breve descrição sobre seu projeto: notícias do mundo todo
+
 
 ## Print da versão responsiva com CSS puro
 
