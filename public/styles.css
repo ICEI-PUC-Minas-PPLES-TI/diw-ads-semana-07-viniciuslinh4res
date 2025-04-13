@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  a.nav-link {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  a.nav-link:hover {
+    color: #007BFF;
+  }
+  
