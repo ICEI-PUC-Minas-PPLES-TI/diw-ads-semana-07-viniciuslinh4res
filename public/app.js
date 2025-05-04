@@ -1,28 +1,50 @@
+
 const noticias = [
-    {
-      id: 1,
-      titulo: "Governo anuncia novas medidas econômicas",
-      imagem: "https://picsum.photos/id/1015/800/400",
-      descricao: "A economia brasileira recebe um impulso com a aprovação de novas medidas fiscais...",
-      conteudo: "O governo anunciou uma série de medidas para impulsionar a economia, com foco na redução de impostos e estímulo à produção interna..."
-    },
-    {
-      id: 2,
-      titulo: "Protestos ganham força nas ruas",
-      imagem: "https://picsum.photos/id/1025/800/400",
-      descricao: "Manifestantes em várias cidades tomam as ruas exigindo reformas urgentes...",
-      conteudo: "Milhares de pessoas protestaram hoje em todo o país por melhorias na saúde, educação e transporte público..."
-    }
-  ];
-  
-  // Página index.html
-  if (document.querySelector("#noticias-container")) {
-    const container = document.getElementById("noticias-container");
-  
-    noticias.forEach(noticia => {
-      const card = document.createElement("div");
-      card.className = "col-md-6 mb-4";
-      card.innerHTML = `
+  {
+    id: 1,
+    titulo: "Governo anuncia novas medidas econômicas",
+    imagem: "https://picsum.photos/id/1015/800/400",
+    descricao: "A economia brasileira recebe um impulso com a aprovação de novas medidas fiscais...",
+    conteudo: "O governo anunciou uma série de medidas para impulsionar a economia, com foco na redução de impostos e estímulo à produção interna..."
+  },
+  {
+    id: 2,
+    titulo: "Protestos ganham força nas ruas",
+    imagem: "https://picsum.photos/id/1025/800/400",
+    descricao: "Manifestantes em várias cidades tomam as ruas exigindo reformas urgentes...",
+    conteudo: "Milhares de pessoas protestaram hoje em todo o país por melhorias na saúde, educação e transporte público..."
+  },
+  {
+    id: 3,
+    titulo: "Governo anuncia novas medidas econômicas",
+    imagem: "https://picsum.photos/id/1015/800/400",
+    descricao: "A economia brasileira recebe um impulso com a aprovação de novas medidas fiscais...",
+    conteudo: "O governo anunciou uma série de medidas para impulsionar a economia, com foco na redução de impostos e estímulo à produção interna..."
+  },
+  {
+    id: 4,
+    titulo: "Governo anuncia novas medidas econômicas",
+    imagem: "https://picsum.photos/id/1015/800/400",
+    descricao: "A economia brasileira recebe um impulso com a aprovação de novas medidas fiscais...",
+    conteudo: "O governo anunciou uma série de medidas para impulsionar a economia, com foco na redução de impostos e estímulo à produção interna..."
+  },
+  {
+    id: 5,
+    titulo: "Governo anuncia novas medidas econômicas",
+    imagem: "https://picsum.photos/id/1015/800/400",
+    descricao: "A economia brasileira recebe um impulso com a aprovação de novas medidas fiscais...",
+    conteudo: "O governo anunciou uma série de medidas para impulsionar a economia, com foco na redução de impostos e estímulo à produção interna..."
+  },
+];
+
+// Página index.html
+if (document.querySelector("#noticias-container")) {
+  const container = document.getElementById("noticias-container");
+
+  noticias.forEach(noticia => {
+    const card = document.createElement("div");
+    card.className = "col-md-6 mb-4";
+    card.innerHTML = `
         <div class="card h-100">
           <img src="${noticia.imagem}" class="card-img-top" alt="${noticia.titulo}">
           <div class="card-body">
@@ -32,19 +54,19 @@ const noticias = [
           </div>
         </div>
       `;
-      container.appendChild(card);
-    });
-  }
-  
-  // Página detalhes.html
-  if (document.querySelector("#detalhe-container")) {
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get("id"));
-    const noticia = noticias.find(n => n.id === id);
-    const container = document.getElementById("detalhe-container");
-  
-    if (noticia) {
-      container.innerHTML = `
+    container.appendChild(card);
+  });
+}
+
+// Página detalhes.html
+if (document.querySelector("#detalhe-container")) {
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id"));
+  const noticia = noticias.find(n => n.id === id);
+  const container = document.getElementById("detalhe-container");
+
+  if (noticia) {
+    container.innerHTML = `
         <div class="card">
           <img src="${noticia.imagem}" class="card-img-top" alt="${noticia.titulo}">
           <div class="card-body">
@@ -53,8 +75,7 @@ const noticias = [
           </div>
         </div>
       `;
-    } else {
-      container.innerHTML = "<p class='text-danger'>Notícia não encontrada.</p>";
-    }
+  } else {
+    container.innerHTML = "<p class='text-danger'>Notícia não encontrada.</p>";
   }
-  
+}

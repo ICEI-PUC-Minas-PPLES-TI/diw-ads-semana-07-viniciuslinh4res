@@ -9,6 +9,96 @@ body {
   }
   
   a.nav-link:hover {
-    color: #007BFF;
+    color: #017bf5;
   }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  h3 {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px auto;
+    max-width: 800px;
+  }
+  
+  .footer-info {
+    border-top: 1px solid #000;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .coluna {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .coluna h4 {
+    color: #3d08fc;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  
+  .sobre p {
+    background-color: #ccc;
+    height: 8px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    width: 85%;
+  }
+  
+  .autoria {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .autoria img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  
+  .autoria-info {
+    font-size: 11px;
+  }
+  
+  .autoria-info b {
+    display: block;
+  }
+  
+  .redes-sociais {
+    margin-top: 8px;
+  }
+  
+  .titulo-redes {
+    color: #007bff;
+    font-size: 11px;
+  }
+  
+  .redes-sociais a {
+    margin-right: 6px;
+  }
+  
+  .redes-sociais img {
+    width: 1400px;
+    vertical-align: middle;
+  }
+  .logo-topo {
+    width: 80px;
+    height: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .logo-topo {
+      width: 120px;
+    }
+  }
+  
   
